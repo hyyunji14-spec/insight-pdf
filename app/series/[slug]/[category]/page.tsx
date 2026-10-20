@@ -2,7 +2,7 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { MultiSelectProducts } from "@/components/multi-select-products";
-
+export const instant = false;
 import {
   getSeries,
   getProductsBySeries,

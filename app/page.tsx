@@ -8,15 +8,15 @@ export default function Home() {
 
       {/* 메인 소개 */}
       <section className="max-w-2xl">
-        <p className="text-sm font-medium tracking-wide text-stone-500">
+        <p className="text-sm font-medium tracking-wide text-white">
           인사이트 영어 교재
         </p>
 
-        <h1 className="mt-2 font-sans text-4xl font-bold leading-tight text-stone-900 sm:text-5xl">
-          콤보, 콤보 주니어, 코어셋
-        </h1>
+        <h1 className="mt-2 font-sans text-4xl font-semibold leading-tight tracking-tight text-[#F5F1E8] sm:text-5xl">
+  콤보, 콤보 주니어, 코어셋
+</h1>
 
-        <p className="mt-4 text-base leading-7 text-stone-600">
+        <p className="mt-4 text-base leading-7 text-white">
           시리즈를 선택한 뒤 필요한 권만 장바구니에 담거나 바로 구매할 수
           있습니다. 실제 결제와 다운로드는 다음 단계에서 연결됩니다.
         </p>

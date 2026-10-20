@@ -9,7 +9,8 @@ import {
 } from "@/lib/catalog";
 
 import { getCategoriesBySeries } from "@/lib/categories";
-export const instant = false;
+
+
 export default async function CategoryPage({
   params,
 }: {
@@ -70,18 +71,18 @@ export default async function CategoryPage({
       {/* 뒤로 가기 */}
       <Link
         href={`/series/${slug}`}
-        className="text-sm text-stone-500 hover:text-stone-900"
+        className="text-sm text-white transition-colors hover:text-white/80"
       >
         ← {series.name} 목록으로
       </Link>
 
       {/* 카테고리 제목 */}
       <header className="mt-6">
-        <h1 className="text-3xl font-bold text-stone-900">
+        <h1 className="text-3xl font-bold text-white">
           {category.name}
         </h1>
 
-        <p className="mt-2 text-stone-500">
+        <p className="mt-2 text-white">
           총 {products.length}권의 교재
         </p>
       </header>

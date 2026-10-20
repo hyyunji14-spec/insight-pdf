@@ -18,3 +18,26 @@ body {
   color: var(--foreground);
   font-family: var(--font-sans), Arial, Helvetica, sans-serif;
 }
+
+/* 사이트 전체 배경색 */
+html,
+body {
+  min-height: 100%;
+  background-color: #5E813F !important;
+}
+
+body {
+  margin: 0;
+}
+
+/* 페이지 전체 배경 */
+main {
+  background-color: #5E813F !important;
+}
+
+/* 전체 사이트 배경 */
+html,
+body,
+body main {
+  background-color: #5E813F !important;
+}

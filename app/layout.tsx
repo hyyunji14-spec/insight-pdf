@@ -1,5 +1,11 @@
+
 import type { Metadata } from "next";
-import { Geist, Noto_Sans_KR, Source_Serif_4 } from "next/font/google";
+import {
+  Geist,
+  Noto_Sans_KR,
+  Source_Serif_4,
+} from "next/font/google";
+
 import { CartProvider } from "@/components/cart-provider";
 import { Header } from "@/components/header";
 import "./globals.css";
@@ -21,21 +27,34 @@ const sourceSerif = Source_Serif_4({
 
 export const metadata: Metadata = {
   title: "English PDF Store",
-  description: "Combo, Combo Junior, Coreset 영어 PDF 교재 판매",
+  description:
+    "Combo, Combo Junior, Coreset 영어 PDF 교재 판매",
 };
 
-export default function RootLayout({ children }: LayoutProps<"/">) {
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
   return (
-    <html
-      lang="ko"
-      className={`${geistSans.variable} ${notoSansKr.variable} ${sourceSerif.variable} h-full antialiased`}
-    >
-      <body className="flex min-h-full flex-col font-sans">
+    <html lang="ko">
+      <body
+        className={`
+          ${geistSans.variable}
+          ${notoSansKr.variable}
+          ${sourceSerif.variable}
+          min-h-screen
+          bg-[#5E813F]
+        `}
+      >
         <CartProvider>
           <Header />
-          <main className="flex flex-1 flex-col">{children}</main>
+          {children}
         </CartProvider>
       </body>
     </html>
   );
 }
+
+
+
